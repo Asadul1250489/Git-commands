@@ -21,5 +21,9 @@
     clean -id`
     stash save     Save the local diretory witout commit
     stash list     show stash list
-    stash show    show which file are save with stash save tag
-    stash apply   restore the stash file
+    stash show      show which file are save with stash save tag
+    stash apply     restore the stash file
+    reset --soft HEAD~;   Undo commit and keep all files staged
+    reset HEAD~              Undo commit and unstage all files
+    reset --mixed HEAD~                      
+    reset --hard HEAD~;       Undo the commit and completely remove all changes
